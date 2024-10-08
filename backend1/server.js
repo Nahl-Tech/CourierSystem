@@ -18,7 +18,8 @@ const server = http.createServer(app);
 // Socket.IO server ka setup
 const io = new Server(server, {
   cors: {
-    origin: "*", // Set your admin panel's domain here
+    origin: process.env.Frontend_Port, // Set your admin panel's domain here
+    credentials: true, // Cookies allow karne ke liye
   }
 });
 
