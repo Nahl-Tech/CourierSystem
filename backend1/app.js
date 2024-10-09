@@ -15,7 +15,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: process.env.Frontend_Port, // Set your admin panel's domain here
+    origin: process.env.F_PORT, // Set your admin panel's domain here
     credentials: true, // Cookies allow karne ke liye
   })
 );
